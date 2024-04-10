@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+            function greetingWithWeather(name, weather) {
+                const weatherTalk={
+                sunny: `Chào ${name}!Hom nay troi nang tuyet voi`,
+                rainy: `Chào ${name}!Hôm nay trời mưa, hãy mang theo ô!`,
+                windy: `Chào ${name}!Hôm nay thời tiết không xác định.`,
+                };
+                return (weatherTalk[weather]);
+    }
+    
+console.log(greetingWithWeather("John", "sunny"));
+console.log(greetingWithWeather("Alice", "rainy"));
+console.log(greetingWithWeather("Bob", "windy"));
+
+        
+    </script>
+</body>
+</html>
